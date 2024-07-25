@@ -452,7 +452,7 @@
                 trackingDetails.forEach(detail => {
                     const element = document.getElementById(detail.id);
                     if (element) {
-                        element.textContent = poTrackingData[detail.index] || 'N/A';
+                        element.textContent = poTrackingData[detail.index] || ' ';
                     } else {
                         console.error(`Element with id ${detail.id} not found`);
                     }
